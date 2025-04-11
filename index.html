@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+      <div class="container" id="container">
+        <h1>Password Generator</h1>
+        <section class="pass-display" id="pass-display">
+          <input
+            type="text"
+            class="text"
+            id="text"
+            value=""
+            placeholder="Enter Your data"
+            disabled
+          />
+          <p id="copy-p">Password copied to clipboard!</p>
+          <button class="btn" id="btn">Copy Password</button>
+        </section>
+        <label for="" id="text-lebel"
+          >Use the slider and select options to lengthen your password
+          (6-24).</label
+        >
+        <section class="slider-section" id="slider-section">
+          <label for="">Total Characters</label>
+          <input
+            type="range"
+            class="slider"
+            id="slider"
+            min="6"
+            max="24"
+            value="9"
+          />
+          <span class="slider-value" id="slider-value">9</span>
+        </section>
+
+        <section class="checkbox-section" id="checkbox-section">
+          <section class="numbers" >
+            <input type="checkbox" name="" id="numbers" checked onclick="handleCheckBox(1)" />
+            <label for="numbers">Include Numbers</label>
+          </section>
+          <section class="Letters" >
+            <input type="checkbox" name="" id="letters" checked onclick="handleCheckBox(2)" />
+            <span id="letters">Include Letters</span>
+          </section>
+          <section class="case" >
+            <input type="checkbox" name="" id="case" checked onclick="handleCheckBox(3)" />
+            <label id="case">Include Mixed Case</label>
+          </section>
+          <section class="punctuation" id="">
+            <input type="checkbox" name="" id="punctuation" checked  onclick="handleCheckBox(4)"/>
+            <label id="punctuation">Include Punctuation</label>
+          </section>
+        </section>
+
+        <p id="alert">
+          Please select at least one checkbox to generate a password
+        </p>
+      </div>
+      <section class="information" id="information">
+        <section class="information-section" id="information-section">
+          <h2>Do you use any of these weak passwords?</h2>
+          <ol>
+            <li>Password</li>
+            <li>123456</li>
+            <li>Qwerty</li>
+            <li>Your name</li>
+          </ol>
+        </section>
+        <section class="second-information" id="second-information">
+          <h2>Why are those passwords weak?</h2>
+          <ol>
+            <li>They're easy to guess or crack.</li>
+            <li>
+              If one of your logins is compromised, a hacker can access all your
+              services.
+            </li>
+          </ol>
+        </section>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

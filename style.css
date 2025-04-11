@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984");
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  /* position: relative; */
+}
+
+#main-container {
+  /* display: flex; */
+}
+
+ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+#copy-p {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 5rem;
+  z-index: 2;
+  display: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  left: 1rem;
+  box-shadow: 3px 3px 5px 3px rgb(154, 235, 48);
+
+}
+
+#alert {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  display: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px 3px orange;
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  border-radius: 0.9rem;
+  box-shadow: 3px 3px 10px 5px rgb(143, 198, 214);
+}
+
+#pass-display {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px 3px rgb(205, 201, 201);
+  display: flex;
+}
+
+#text {
+  width: 100%;
+  outline: 0;
+  border-style: none;
+  border-width: 0;
+  background-color: transparent;
+  font-weight: 600px;
+  font-size: large;
+  padding: 1rem;
+  flex: 7;
+  cursor: pointer;
+}
+
+#btn {
+  flex: 3;
+  cursor: pointer;
+  color: white;
+  background-color: #4caf50;
+  outline: none;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px 3px rgb(172, 226, 63);
+
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+#text-lebel {
+  display: block;
+  margin: 1rem;
+}
+
+#slider-section {
+  /* background-color: #4CAF50; */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+
+#slider-value{
+    font-weight: bold;
+}
+
+#checkbox-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    & section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    & input{
+        cursor: pointer;
+    }
+}
+
+
+#information{   
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#information-section{
+    flex: 4;
+    text-align: left;
+}
+
+#second-information{
+    flex: 4;
+    text-align: left;
+}
+
+
+
+#slider{
+    cursor: pointer;
+}
