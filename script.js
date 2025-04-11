@@ -195,7 +195,7 @@ const generatePassword = (str) => {
   const newStr = shuffledArray.join("");
   // console.log(newStr)
 
-  let password = newStr.slice(0, 9);
+  let password = newStr.slice(0, lengthOfPassword);
   console.log(password);
   inputText.value = password;
 };
